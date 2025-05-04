@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | V-Click Photography Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="photographer-header">
+        <div class="header-content">
+            <div class="logo-wrapper">
+                <img src="img/vclick logo.jpg" alt="V-Click Logo" class="aperture-spin">
+                <div class="logo-text">
+                    <h1>V-Click</h1>
+                    <p class="tagline">Through the lens of VIT</p>
+                </div>
+            </div>
+            <nav class="photographer-nav">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="workshops.html" class="nav-link">Workshops</a>
+                <a href="join.html" class="nav-link cta-button">Join Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="gallery-main">
+        <section class="gallery-header">
+            <h2 class="section-title">Our Gallery</h2>
+            <div class="gallery-filters">
+                <a href="gallery.html" class="filter-btn active">All</a>
+                <a href="gallery-portraits.html" class="filter-btn">Portraits</a>
+                <a href="gallery-street.html" class="filter-btn">Street</a>
+                <a href="gallery-nature.html" class="filter-btn">Nature</a>
+                <a href="gallery-events.html" class="filter-btn">Events</a>
+            </div>
+        </section>
+
+        <section class="masonry-gallery">
+            <!-- Portrait 1 -->
+            <div class="gallery-item">
+                <img src="img/concert1.png" alt="Portrait photography" loading="lazy">
+                <div class="photo-meta">
+                    <span class="photo-title">Silhouette</span>
+                    <span class="photo-author">@rajesh_k</span>
+                </div>
+            </div>
+            
+            <!-- Street 1 -->
+            <div class="gallery-item">
+                <img src="img/deep1.png" alt="Street photography" loading="lazy">
+                <div class="photo-meta">
+                    <span class="photo-title">City Pulse</span>
+                    <span class="photo-author">@priya_m</span>
+                </div>
+            </div>
+            
+            <!-- Nature 1 -->
+            <div class="gallery-item">
+                <img src="img/nature3.png" alt="Nature photography" loading="lazy">
+                <div class="photo-meta">
+                    <span class="photo-title">Morning Mist</span>
+                    <span class="photo-author">@arjun_v</span>
+                </div>
+            </div>
+            
+            <!-- Event 1 -->
+            <div class="gallery-item">
+                <img src="img/concert4.png" alt="Event photography" loading="lazy">
+                <div class="photo-meta">
+                    <span class="photo-title">College Fest</span>
+                    <span class="photo-author">@neha_s</span>
+                </div>
+            </div>
+            
+            <!-- Portrait 2 -->
+            <div class="gallery-item">
+                <img src="img/deep2.png" alt="Portrait photography" loading="lazy">
+                <div class="photo-meta">
+                    <span class="photo-title">Expressions</span>
+                    <span class="photo-author">@sameer_p</span>
+                </div>
+            </div>
+            
+            <!-- Street 2 -->
+            <div class="gallery-item">
+                <img src="img/deep3.png" alt="Street photography" loading="lazy">
+                <div class="photo-meta">
+                    <span class="photo-title">Urban Jungle</span>
+                    <span class="photo-author">@vikram_r</span>
+                </div>
+            </div>
+            
+            <!-- Nature 2 -->
+            <div class="gallery-item">
+                <img src="img/nature1.png" alt="Nature photography" loading="lazy">
+                <div class="photo-meta">
+                    <span class="photo-title">Golden Hour</span>
+                    <span class="photo-author">@ananya_k</span>
+                </div>
+            </div>
+            
+            <!-- Event 2 -->
+            <div class="gallery-item">
+                <img src="img/concert2.png" alt="Event photography" loading="lazy">
+                <div class="photo-meta">
+                    <span class="photo-title">Cultural Night</span>
+                    <span class="photo-author">@rohit_m</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="pagination">
+            <a href="#" class="page-link active">1</a>
+            <a href="gallery-page2.html" class="page-link">2</a>
+            <a href="gallery-page3.html" class="page-link">3</a>
+            <a href="gallery-page2.html" class="page-link next">Next →</a>
+        </div>
+    </main>
+
+    <footer class="photographer-footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h4>V-Click</h4>
+                <p>The official photography club of VIT Pune since 2015</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon"><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="img/whatsapp.png" alt="Flickr"></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© <span id="year"></span> V-Click Photography Club. All images © their respective authors.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple year update - no gallery functionality
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
